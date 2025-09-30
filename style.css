@@ -1,0 +1,120 @@
+body {
+    font-size: 15pt;
+}.header,.footer {
+    background: #66ABB3;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0,1);
+}
+
+.container {
+    display: flex;
+    min-height: 400px;
+}
+
+.sidebar {
+    background: #FFFFFF;
+    width: 20%;
+    padding: 20px;
+}
+    
+.content {
+    background: #C8FFFF;
+    flex: 1;
+    padding: 10px;
+}
+
+.kotak {
+    background: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid#888;
+    border-radius: 10px;
+}
+.sidebar a{
+    background: #4a90e2;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid#888;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #4a90e2;
+  color: white;
+}
+
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  background: #a78bfa;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+  
+  .container {
+    display: flex;
+    flex: 1;/* mengisi ruang antara header dan footer*/
+    min-height: 0;/*biar terisi natural*/
+  }
+  
+  .sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar li {
+  margin: 12px 0;
+}
+.sidebar a {
+  text-decoration: none;
+  color: #374151;
+}
+
+.sidebar {
+  background: #fef3c7;
+  padding: 20px;
+  flex-shrink: 0;/*biar tidak mengecil*/
+}
+
+.content {
+  flex-shrink: 1;/*mengisi sisa ruang*/
+  background: white;
+  padding: 20px;
+  border-left: 2px solid grey;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 720px){
+  .container {
+    flex-direction: column; /*sidebar jadi pindah ke atas*/
+  }
+  
+  .sidebar ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
